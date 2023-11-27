@@ -1,35 +1,45 @@
 ---
-title: 'BioHackrXiv  template'
+title: 'Improving Bioschemas creation and community adoption through process improvements and tool development, and advancing compliance to FAIR standards'
 tags:
-  - replace with your own keywords
-  - at least 3 is recommended
+  - Bioschemas 
+  - Schema.org 
+  - FAIR 
 authors:
   - name: First Last
     orcid: 0000-0000-0000-0000
     affiliation: 1
-  - name: Second Last
-    orcid: 0000-0000-0000-0000
+  - name: Alban Gaignard
+    orcid: 0000-0002-3597-8557
     affiliation: 2
 
 affiliations:
  - name: Institution 1, address, city, country
    index: 1
- - name: Institution 1, address, city, country
+ - name: Nantes Université, CNRS, INSERM, l’institut du thorax, Nantes F-44000, France
    index: 2
-date: 01 January 2020
+date: 27 November 2023
 bibliography: paper.bib
-authors_short: Last et al. (2021) BioHackrXiv  template
+authors_short: Last et al. (2023) BioHackrXiv  template
 group: BioHackrXiv
-event: BioHackathon Europe 2021
+event: BioHackathon Europe 2023
 ---
 
-# Introduction or Background
+# Introduction
 
-Add to this section a couple of paragraphs introducing the work done during the BioHackathon, CodeFest, VoCamp or Sprint event. Please add references whenever needed. 
+Nowadays scientists massively produce diverse datasets in many communities. They need to combine them to answer scientific or novel questions. To do so, these diverse computational resources need first to be found by search engines. 
 
-[comment]: <, for instance [@Katayama:2010].>
+Bioschemas [@bioschemas_paper] is a simple and lightweight mechanism to annotate online resources in a standardized way and expose key metadata. 
 
-Please separate paragraphs with a double line.
+In our project, we have a number of threads.
+Firstly we aim to ease adoption for new users by providing appropriate tooling. Therefore, we will be working on technically connecting the Data Discovery Engine to the Bioschemas website.
+Ultimately this will enable us to more easily generate machine readable types and profiles for existing and NEW communities. This will, for example, enable us to more easily develop new profiles working with plant, biodiversity and machine learning communities on their minimal sets of metadata. 
+
+Secondly we have a  “mining” strand of work, where we will examine and collate existing web resources with bioschemas mark up, both to ascertain overall usage and compliance, and identify common issues or misuse.
+
+Furthermore, we will also try and make our work more palatable for other research communities,  by sharing domain-agnostic standards through the schemas.science site. 
+
+We are very happy to welcome web designers, developers, and experts in knowledge engineering, as well as domain experts interested in making progress on FAIRification. 
+
 
 ## Subsection level 2
 
@@ -59,6 +69,7 @@ Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
 ## Profile-based analysis
 
+
 ## Property-based analysis
 
 
@@ -83,4 +94,4 @@ Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint
 
 # References
 
-Leave this section blank, create a paper.bib with all your references.
+Leave thise section blank, create a paper.bib with all your references.
