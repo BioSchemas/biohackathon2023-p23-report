@@ -57,19 +57,7 @@ Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
 ## Profile-based analysis
 
-![Capture d’écran 2023-11-03 à 11.58.26.png](https://hackmd.io/_uploads/Sk-DGIzm6.png)
-Figure X ... 
-
-![Capture d’écran 2023-11-03 à 11.59.29.png](https://hackmd.io/_uploads/SJRqMLfXT.png)
-Figure X ... 
-
 ## Property-based analysis
-
-![Capture d’écran 2023-11-03 à 12.06.17.png](https://hackmd.io/_uploads/B16V4UGQ6.png)
-Figure X ... 
-
-![Capture d’écran 2023-11-03 à 12.08.13.png](https://hackmd.io/_uploads/ryXn4Iz7a.png)
-Figure X ... 
 
 
 # Discussion and/or Conclusion
@@ -93,4 +81,4 @@ Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint
 
 # References
 
-Leave thise section blank, create a paper.bib with all your references.
+Leave this section blank, create a paper.bib with all your references.
