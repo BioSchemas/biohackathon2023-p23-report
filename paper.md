@@ -25,7 +25,9 @@ event: BioHackathon Europe 2021
 
 # Introduction or Background
 
-Add to this section a couple of paragraphs introducing the work done dring the BioHackathon, CodeFest, VoCamp or Sprint event. Please add references whenever needed, for instance [@Katayama:2010].
+Add to this section a couple of paragraphs introducing the work done dring the BioHackathon, CodeFest, VoCamp or Sprint event. Please add references whenever needed. 
+
+[comment]: <, for instance [@Katayama:2010].>
 
 Please separate paragraphs with a double line.
 
