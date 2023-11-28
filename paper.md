@@ -132,8 +132,21 @@ All these figures can be reproduced by re-executing the publicly available Jupyt
 
 [^nb_prof]: https://github.com/BioSchemas/bioschemas-validation/blob/main/scripts/Plots-Validation.ipynb
 
-### 2.1.1 Property-based analysis
+### 2.1.2 Property-based analysis
+In the provious analysis, we have been focusing on profiles. Now we would like to investigate the global usage of properties regardless of profiles. 
 
+![properties with errors](figures/propErrors.png)
+Figure 5. Most required Bioschemas properties considered as missing when live deploys are validated.  
+
+![properties with warnings](figures/propWarnings.png)
+Figure 6. Most recommended Bioschemas properties considered as missing when live deploys are validated.  
+
+All these figures can be reproduced by re-executing the publicly available Jupyter notebook[^nb_prop]. 
+
+[^nb_prop]: https://github.com/BioSchemas/bioschemas-validation/blob/main/scripts/Plots-Validation-Properties.ipynb
+
+### 2.1.3 Discussion
+To conclude this study, the main take-home message is that we need more `dct:conformsTo` properties if we want to increase the number of evaluated live deploy URLs. From the FAIR-Checker perspective, there is ongoing activities aimed at suggesting the closest profile, in the absence of `dct:conformsTo` properties. The profile-based analysis told us that some communities such as *Dataset, DataCatalog, ComputationalWorkflow, ComputationalTool, or TrainingMaterial*, could be supported in priority to increase the quality of their exposed metadata. Finally, the property-based analysis told us that if we focus in priority in better using the `schema:url` property, by reducing the number of validation errors, we could have a high impact on the Bioschemas metadata quality. 
 
 # 3. Discussion and/or Conclusion
 
@@ -152,5 +165,3 @@ And maybe you want to add a sentence or two on how you plan to continue. Please 
 Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint or similar where this work was (partially) developed.
 
 # References
-
-Leave thise section blank, create a paper.bib with all your references.
