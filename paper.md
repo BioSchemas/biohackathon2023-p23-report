@@ -78,6 +78,30 @@ We automated the metadata harvesting through a weekly run GitHub action[^gh].
 [^rdf_crawl]: https://github.com/BioSchemas/bioschemas-validation/tree/main/data 
 [^gh]: https://github.com/BioSchemas/bioschemas-validation/blob/main/.github/workflows/gen_live_deploy_reports.yml
 
+Table 1. Top-20 most used Schema.org classes in Bioschemas live deploys. 
+| Class | Count |
+| -------- | -------- |
+http://schema.org/CreativeWork	| 14916
+http://schema.org/BioChemEntity	| 1085
+http://schema.org/DataDownload	| 910
+http://schema.org/creativeWork	| 714
+https://bioschemas.org/Taxon	| 714
+http://schema.org/Dataset	| 524
+http://schema.org/Organization	| 307
+http://schema.org/Person	| 256
+http://schema.org/DefinedTerm	| 159
+http://schema.org/MolecularEntity	| 113
+http://schema.org/DataSet	| 78
+http://schema.org/TaxonName	| 70
+http://schema.org/ChemicalSubstance	| 68
+http://schema.org/SequenceAnnotation	| 62
+http://schema.org/ScholarlyArticle	| 50
+http://schema.org/PropertyValue	| 47
+http://schema.org/SequenceRange	| 40
+http://schema.org/DataCatalog	| 32
+http://schema.org/PostalAddress	| 30
+http://schema.org/WebPage	| 28 
+
 
 ### Profile-based analysis
 
