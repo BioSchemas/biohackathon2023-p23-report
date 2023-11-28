@@ -81,50 +81,50 @@ We automated the metadata harvesting through a weekly run GitHub action[^gh].
 Table 1. Top-20 most used Schema.org classes in Bioschemas live deploys. 
 | Class | Count |
 | -------- | -------- |
-http://schema.org/CreativeWork	| 14916
-http://schema.org/BioChemEntity	| 1085
-http://schema.org/DataDownload	| 910
-http://schema.org/creativeWork	| 714
-https://bioschemas.org/Taxon	| 714
-http://schema.org/Dataset	| 524
-http://schema.org/Organization	| 307
-http://schema.org/Person	| 256
-http://schema.org/DefinedTerm	| 159
-http://schema.org/MolecularEntity	| 113
-http://schema.org/DataSet	| 78
-http://schema.org/TaxonName	| 70
-http://schema.org/ChemicalSubstance	| 68
-http://schema.org/SequenceAnnotation	| 62
-http://schema.org/ScholarlyArticle	| 50
-http://schema.org/PropertyValue	| 47
-http://schema.org/SequenceRange	| 40
-http://schema.org/DataCatalog	| 32
-http://schema.org/PostalAddress	| 30
-http://schema.org/WebPage	| 28 
+| http://schema.org/CreativeWork	| 14916 |
+| http://schema.org/BioChemEntity	| 1085 |
+| http://schema.org/DataDownload	| 910 |
+| http://schema.org/creativeWork	| 714 |
+| https://bioschemas.org/Taxon	| 714 |
+| http://schema.org/Dataset	| 524 |
+| http://schema.org/Organization	| 307 |
+| http://schema.org/Person	| 256 |
+| http://schema.org/DefinedTerm	| 159 |
+| http://schema.org/MolecularEntity	| 113 |
+| http://schema.org/DataSet	| 78 |
+| http://schema.org/TaxonName	| 70 |
+| http://schema.org/ChemicalSubstance	| 68 |
+| http://schema.org/SequenceAnnotation	| 62 |
+| http://schema.org/ScholarlyArticle	| 50 |
+| http://schema.org/PropertyValue	| 47 |
+| http://schema.org/SequenceRange	| 40 |
+| http://schema.org/DataCatalog	| 32 |
+| http://schema.org/PostalAddress	| 30 |
+| http://schema.org/WebPage	| 28  |
 
 Table 2. Top-20 most used Schema.org properties in Bioschemas live deploys. 
 | Property | Count |
 | -------- | -------- |
-http://www.w3.org/1999/02/22-rdf-syntax-ns#type | 20595
-http://schema.org/name | 20537
-http://schema.org/url | 12281
-http://schema.org/about | 5716
-http://schema.org/identifier | 1616
-http://schema.org/taxonRank | 1158
-http://schema.org/taxonomicRange | 1083
-http://schema.org/parentTaxon | 1078
-http://schema.org/@Type | 1074
-http://schema.org/studySubject | 1074
-http://schema.org/distribution | 916
-http://schema.org/description | 607
-http://schema.org/keywords | 578
-http://purl.org/dc/terms/conformsTo | 562
-http://schema.org/version | 444
-http://schema.org/author | 311
-http://schema.org/license | 200
-http://schema.org/contentURL | 178
-http://schema.org/creator | 164
-http://schema.org/sameAs | 161
+| http://www.w3.org/1999/02/22-rdf-syntax-ns#type | 20595 |
+| http://schema.org/name | 20537 |
+| http://schema.org/url | 12281 |
+| http://schema.org/about | 5716 |
+| http://schema.org/identifier | 1616 |
+| http://schema.org/taxonRank | 1158 |
+| http://schema.org/taxonomicRange | 1083 |
+| http://schema.org/parentTaxon | 1078 |
+| http://schema.org/@Type | 1074 |
+| http://schema.org/studySubject | 1074 |
+| http://schema.org/distribution | 916 |
+| http://schema.org/description | 607 |
+| http://schema.org/keywords | 578 |
+| http://purl.org/dc/terms/conformsTo | 562 |
+| http://schema.org/version | 444 |
+| http://schema.org/author | 311 |
+| http://schema.org/license | 200 |
+| http://schema.org/contentURL | 178 |
+| http://schema.org/creator | 164 | 
+| http://schema.org/sameAs | 161 | 
 
 ### Profile-based analysis
 
