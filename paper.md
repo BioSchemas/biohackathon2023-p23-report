@@ -62,16 +62,27 @@ Table 1
 
 Remember to introduce figures (see Figure 1) before they appear on the document. 
 
-![BioHackrXiv logo](./biohackrxiv.png)
- 
+![BioHackrXiv logo](figures/biohackrxiv.png)
 Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
-# Analysis of Bioschemas Live Deploys 
+# Results 
+## Bioschemas usage analysis through Live Deploys 
 
-## Profile-based analysis
+The first part of this work consisted in assembling an RDF dataset based on the Bioschemas 140 live deploys URLS[^ld]
+
+We developed a command line application supported by the FAIR-Checker[@Gaignard2023FAIRCheckerSD] API that harvests Bioschemas markup for a given web page and store the markup in an RDF file. This results in an RDF graph with 74 245 Schema.org triples[^rdf_crawl]. 
+
+We automated the metadata harvesting through a weekly run GitHub action[^gh]. 
+
+[^ld]: https://bioschemas.org/developer/liveDeploys
+[^rdf_crawl]: https://github.com/BioSchemas/bioschemas-validation/tree/main/data 
+[^gh]: https://github.com/BioSchemas/bioschemas-validation/blob/main/.github/workflows/gen_live_deploy_reports.yml
 
 
-## Property-based analysis
+### Profile-based analysis
+
+
+### Property-based analysis
 
 
 # Discussion and/or Conclusion
@@ -86,9 +97,8 @@ For citations of references, we prefer the use of parenthesis, last name and yea
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
-* Please add a list here
-* Make sure you let us know which of these correspond to Jupyter notebooks. Although not supported yet, we plan to add features for them
-* And remember, software and data need a license for them to be used by others, no license means no clear rules so nobody could legally use a non-licensed research object, whatever that object is
+* Bioschemas validation repo: https://github.com/BioSchemas/bioschemas-validation
+* 
 
 # Acknowledgements
 Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint or similar where this work was (partially) developed.
