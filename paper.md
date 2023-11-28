@@ -25,14 +25,15 @@ event: BioHackathon Europe 2023
 ---
 
 # Introduction
+## Background
 
 Nowadays scientists massively produce diverse datasets in many communities. They need to combine them to answer scientific or novel questions. To do so, these diverse computational resources need first to be found by search engines. 
 
-Bioschemas [@bioschemas_paper] is a simple and lightweight mechanism to annotate online resources in a standardized way and expose key metadata. 
+Bioschemas [@Gray2017BioschemasFP] is a simple and lightweight mechanism to annotate online resources in a standardized way and expose key metadata. 
 
-In our project, we have a number of threads.
-Firstly we aim to ease adoption for new users by providing appropriate tooling. Therefore, we will be working on technically connecting the Data Discovery Engine to the Bioschemas website.
-Ultimately this will enable us to more easily generate machine readable types and profiles for existing and NEW communities. This will, for example, enable us to more easily develop new profiles working with plant, biodiversity and machine learning communities on their minimal sets of metadata. 
+## Objectives
+
+In our project, we have a number of threads. Firstly we aim to ease adoption for new users by providing appropriate tooling. Therefore, we will be working on technically connecting the [Data Discovery Engine](https://discovery.biothings.io) to the [Bioschemas](https://bioschemas.org) website. Ultimately this will enable us to more easily generate machine readable types and profiles for existing and NEW communities. This will, for example, enable us to more easily develop new profiles working with plant, biodiversity and machine learning communities on their minimal sets of metadata. 
 
 Secondly we have a  “mining” strand of work, where we will examine and collate existing web resources with bioschemas mark up, both to ascertain overall usage and compliance, and identify common issues or misuse.
 
