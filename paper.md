@@ -62,8 +62,6 @@ Table 1
 
 Remember to introduce figures (see Figure 1) before they appear on the document. 
 
-![BioHackrXiv logo](figures/biohackrxiv.png)
-Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
 
 # Results 
 ## Bioschemas usage analysis through Live Deploys 
@@ -77,6 +75,8 @@ We automated the metadata harvesting through a weekly run GitHub action[^gh].
 [^ld]: https://bioschemas.org/developer/liveDeploys
 [^rdf_crawl]: https://github.com/BioSchemas/bioschemas-validation/tree/main/data 
 [^gh]: https://github.com/BioSchemas/bioschemas-validation/blob/main/.github/workflows/gen_live_deploy_reports.yml
+
+Table 1 and Table 2 report the top-20 most used classes and properties. In these table we can also identify some misspelling of Schema.org classes, and properties (e.g. @Type, DataSet)
 
 Table 1. Top-20 most used Schema.org classes in Bioschemas live deploys. 
 | Class | Count |
@@ -126,8 +126,32 @@ Table 2. Top-20 most used Schema.org properties in Bioschemas live deploys.
 | http://schema.org/creator | 164 | 
 | http://schema.org/sameAs | 161 | 
 
-### Profile-based analysis
 
+Then, for each of the live deploy URLs, we computed the number of `dct:conformsTo` properties. Figure 1 highlights that a majority of live deploys do not expose `dct:conformsTo` properties. Since this proerti allows to link a Bioschemas profile to a set of Bioschemas annotations, this becomes problematic at the time of computationally validating the profiles. 
+
+![dct:conformsTo properties](figures/conformsTo.png)
+Figure 1. More than 60 live deploys expose dct:conformsTo properties whereas this property is absent for more than 70 live deploys. 
+
+All these figures can be reproduced by re-executing the publicly available Jupyter notebooks[^nb_dumps][^nb_harvest]. 
+
+[^nb_dumps]: https://github.com/BioSchemas/bioschemas-validation/blob/main/scripts/LiveDeploys-dump.ipynb
+[^nb_harvest]: https://github.com/BioSchemas/bioschemas-validation/blob/main/scripts/Plots-Harvesting.ipynb
+
+### Profile-based analysis
+![most used profiles](figures/mostUsedProfiles.png)
+Figure 2. Most used Bioschemas profiles in live deploys. 
+
+For each of the live deploys we reused teh FAIR-Checker API to validate the profiles specified with `dct:conformsTo` properties. Figure 3 reports the number of *errors*, meaning that required properties are missing, and Figure 4 reports the number of *warnings*, meaning that recommended properties are missing. The numbers of *errors*/*warnings* have been normalized by the number of profile instances. 
+
+![profiles with errors](figures/profErrors.png)
+Figure 3. Bioschemas profiles showing the highest number of missing required properties.  
+
+![profiles with warnings](figures/profWarnings.png)
+Figure 4. Bioschemas profiles showing the highest number of missing recommended properties.  
+
+All these figures can be reproduced by re-executing the publicly available Jupyter notebook[^nb_prof]. 
+
+[^nb_prof]: https://github.com/BioSchemas/bioschemas-validation/blob/main/scripts/Plots-Validation.ipynb
 
 ### Property-based analysis
 
