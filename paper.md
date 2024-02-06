@@ -26,7 +26,7 @@ affiliations:
     index: 1
   - name: XXX
     index: 2
-  - name: XXX
+  - name: Department of Biomedical Sciences, University of Padua, Padova, Italy
     index: 3
   - name: XXX
     index: 4
