@@ -35,7 +35,7 @@ affiliations:
    
 date: 27 November 2023
 bibliography: paper.bib
-authors_short: Last et al. (2023) BioHackrXiv  template
+authors_short: Gaignard A., Tsueng G. et al. BioHackathon project 23 (2023) 
 group: BioHackrXiv
 event: BioHackathon Europe 2023
 ---
