@@ -51,10 +51,11 @@ Interactions during Biohackathon 2022 Europe led to ongoing work on the developm
 Lastly, communities of practice outside of the life sciences have expressed reluctance to use Bioschemas due assumptions based on the name, “Bioschemas.” Many of the Bioschemas profiles and types are relevant to other domains of research, in spite of the name, “Bioschemas.” To encourage adoption of domain-agnostic  ‘Bioschemas’ profiles and types outside of the life science community, and improve standardization between domains of research, we developed a barebones site, https://schemas.science which would display domain-agnostic Bioschemas-developed profiles and types. To ensure that the Schemas.science site remains synchronous with Bioschemas, we would like to extend the automated Bioschemas website updates from the Bioschemas profile development process to schemas.science.
 
 **Objectives**
-1. Assess the overall usage and compliance of bioschemas and identify common issues or misuse by collecting and analysing Bioschemas markup from existing web resources
-2. Engage with research communities to create new or update existing Bioschemas Types
-3. Utilising the new Bioschemas Types, develop an automated process to update the Bioschemas website from a DDE-generated JSON-LD representation of the new type
-4. Adapt the processes for automatically generating Bioschemas web page profiles and types to the generation of schemas.science pages.
+
+ 1. Assess the overall usage and compliance of bioschemas and identify common issues or misuse by collecting and analysing Bioschemas markup from existing web resources
+ 2. Engage with research communities to create new or update existing Bioschemas Types
+ 3. Utilising the new Bioschemas Types, develop an automated process to update the Bioschemas website from a DDE-generated JSON-LD representation of the new type
+ 4. Adapt the processes for automatically generating Bioschemas web page profiles and types to the generation of schemas.science pages.
 
 
 # 2. Results 
