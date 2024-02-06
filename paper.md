@@ -222,7 +222,7 @@ With respect to implementing the final piece of our user-centric pipeline, which
 
 
 # 4. Future work
-This work will be consolidated in the context of the German BioHackathon 2023, and will address in priority i) the development of a Bioschemas Profile recommendation system, for resources not exposing any `dct:conformsTo` properties and ii) the maturation of specific types and profiles required by specific communities such as *Samples* or *Lab process / protocols*.       
+This work will be consolidated in the context of the German BioHackathon 2023, and will address in priority i) the development of a Bioschemas Profile recommendation system, for resources not exposing any `dct:conformsTo` properties and ii) the maturation of specific types and profiles required by communities such as *Samples* or *Lab process / protocols*.
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
