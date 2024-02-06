@@ -42,7 +42,7 @@ event: BioHackathon Europe 2023
 
 # 1. Introduction
 
-The Bioschemas community seeks to improve the FAIRness of web-based science resources by defining domain-specific metadata schemas. When adopted, these metadata schema specifications expose key metadata properties from resource records, allowing users to find data quickly, accurately and efficiently. During the Biohackathon Europe 2022, we focused on improving our tooling, particularly to facilitate the Bioschemas Profile development process by automating the usage of outputs from the Data Discovery Engine (DDE)--a tool for creating, registering and editing schemas in a machine-readable format (JSON Schema/JSON-LD). Since then, we have been engaging with communities interested in updating Bioschemas profiles and types. 
+The Bioschemas community seeks to improve the FAIRness of web-based science resources by defining domain-specific metadata schemas. When adopted, these metadata schema specifications expose key metadata properties from resource records, allowing users to find data quickly, accurately and efficiently. During the Biohackathon Europe 2022, we focused on improving our tooling, particularly to facilitate the Bioschemas Profile development process by automating the usage of outputs from the Data Discovery Engine (DDE) [@Cano2023SchemaPA] --a tool for creating, registering and editing schemas in a machine-readable format (JSON Schema/JSON-LD). Since then, we have been engaging with communities interested in updating Bioschemas profiles and types. 
 
 While Biohackathon Europe 2022 enabled Bioschemas profiles and types to be available in a machine-readable format, it was unclear how the Bioschemas profiles and types were being used; there is no mechanism to identify users of Bioschemas unless they tell us. As a community, and to try and better focus our activities, we need to answer some important questions: Which profiles and types had the greatest adoption rates? Which profiles and types were problematic and had implementation issues? Were profiles being used correctly? How well did the communities developing the standard mesh with the communities applying the standards? To answer these questions, we will develop an assessment process which  aggregates Bioschemas markup from existing web resources. This will allow us to examine the overall usage of, and compliance to, Bioschemas specifications, as well as allowing us to identify common issues or misuse, and to compare the overall activity of Bioschemas development and adoption by the research community.
 
@@ -222,13 +222,11 @@ With respect to implementing the final piece of our user-centric pipeline, which
 
 
 # 4. Future work
-
-And maybe you want to add a sentence or two on how you plan to continue. Please keep reading to learn about citations and references.
+This work will be consolidated in the context of the German BioHackathon 2023, and will address in priority i) the development of a Bioschemas Profile recommendation system, for resources not exposing any `dct:conformsTo` properties and ii) the maturation of specific types and profiles required by specific communities such as *Samples* or *Lab process / protocols*.       
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
 * Bioschemas validation repo: https://github.com/BioSchemas/bioschemas-validation
-* 
 
 # Contributions
 NJ introduced the project and furnished all required progress reports at BH2023. AG and GT led the writing of the BioHackRxiv report, supported by NJ. AG conducted the assessment of Bioschemas usage. NJ, LJG, AG and GT engaged in Bioschemas discussions with other projects. GT generated the property frequency for Samples in ENA and created and distributed the Survey.
