@@ -28,7 +28,7 @@ affiliations:
     index: 2
   - name: Department of Biomedical Sciences, University of Padua, Padova, Italy
     index: 3
-  - name: ZB MED Information Centre for LifeSciences
+  - name: ZB MED Information Centre for Life Sciences
     index: 4
   - name: University of Manchester, Department of Computer Science, The University of Manchester, Manchester, M13 9PL, UK
     index: 5
