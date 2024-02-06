@@ -26,7 +26,7 @@ affiliations:
     index: 1
   - name: The Scripps Research Institute
     index: 2
-  - name: Department of Biomedical Sciences, University of Padua
+  - name: Department of Biomedical Sciences, University of Padua, Padova, Italy
     index: 3
   - name: ZB MED Information Centre for LifeSciences
     index: 4
