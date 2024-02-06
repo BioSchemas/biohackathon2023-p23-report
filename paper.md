@@ -9,16 +9,16 @@ authors:
     orcid: 0000-0002-3597-8557
     affiliation: 1
   - name: Ginger Tsueng
-    orcid: 
+    orcid: 0000-0001-9536-9115
     affiliation: 2
   - name: Ivan Mičetić
-    orcid: 
+    orcid: 0000-0003-1691-8425
     affiliation: 3
   - name: Leyla Jael Castro
-    orcid: 
+    orcid: 0000-0003-3986-0510
     affiliation: 4
   - name: Nick Juty
-    orcid: 
+    orcid: 0000-0002-2036-8350
     affiliation: 5
 
 affiliations:
