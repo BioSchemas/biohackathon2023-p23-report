@@ -1,5 +1,5 @@
 ---
-title: 'Improving Bioschemas creation and community adoption through process improvements and tool development, and advancing compliance to FAIR standards'
+title: 'Improving Bioschemas creation and community adoption through process improvements, tool development, and advancing compliance to FAIR standards'
 tags:
   - Bioschemas 
   - Schema.org 
