@@ -24,13 +24,13 @@ authors:
 affiliations:
   - name: Nantes Université, CNRS, INSERM, l’institut du thorax, Nantes F-44000, France
     index: 1
-  - name: XXX
+  - name: The Scripps Research Institute
     index: 2
-  - name: XXX
+  - name: Department of Biomedical Sciences, University of Padua
     index: 3
-  - name: XXX
+  - name: ZB MED Information Centre for LifeSciences
     index: 4
-  - name: XXX
+  - name: University of Manchester, Department of Computer Science, The University of Manchester, Manchester, M13 9PL, UK
     index: 5
    
 date: 27 November 2023
