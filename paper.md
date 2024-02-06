@@ -5,18 +5,34 @@ tags:
   - Schema.org 
   - FAIR 
 authors:
-  - name: First Last
-    orcid: 0000-0000-0000-0000
-    affiliation: 1
   - name: Alban Gaignard
     orcid: 0000-0002-3597-8557
+    affiliation: 1
+  - name: Ginger Tsueng
+    orcid: 
     affiliation: 2
+  - name: Ivan Mičetić
+    orcid: 
+    affiliation: 3
+  - name: Leyla Jael Castro
+    orcid: 
+    affiliation: 4
+  - name: Nick Juty
+    orcid: 
+    affiliation: 5
 
 affiliations:
- - name: Institution 1, address, city, country
-   index: 1
- - name: Nantes Université, CNRS, INSERM, l’institut du thorax, Nantes F-44000, France
-   index: 2
+  - name: Nantes Université, CNRS, INSERM, l’institut du thorax, Nantes F-44000, France
+    index: 1
+  - name: XXX
+    index: 2
+  - name: XXX
+    index: 3
+  - name: XXX
+    index: 4
+  - name: XXX
+    index: 5
+   
 date: 27 November 2023
 bibliography: paper.bib
 authors_short: Last et al. (2023) BioHackrXiv  template
@@ -25,21 +41,20 @@ event: BioHackathon Europe 2023
 ---
 
 # 1. Introduction
-## 1.1 Background
 
-Nowadays scientists massively produce diverse datasets in many communities. They need to combine them to answer scientific or novel questions. To do so, these diverse computational resources need first to be found by search engines. 
+The Bioschemas community seeks to improve the FAIRness of web-based science resources by defining domain-specific metadata schemas. When adopted, these metadata schema specifications expose key metadata properties from resource records, allowing users to find data quickly, accurately and efficiently. During the Biohackathon Europe 2022, we focused on improving our tooling, particularly to facilitate the Bioschemas Profile development process by automating the usage of outputs from the Data Discovery Engine (DDE)--a tool for creating, registering and editing schemas in a machine-readable format (JSON Schema/JSON-LD). Since then, we have been engaging with communities interested in updating Bioschemas profiles and types. 
 
-Bioschemas [@Gray2017BioschemasFP] is a simple and lightweight mechanism to annotate online resources in a standardized way and expose key metadata. 
+While Biohackathon Europe 2022 enabled Bioschemas profiles and types to be available in a machine-readable format, it was unclear how the Bioschemas profiles and types were being used; there is no mechanism to identify users of Bioschemas unless they tell us. As a community, and to try and better focus our activities, we need to answer some important questions: Which profiles and types had the greatest adoption rates? Which profiles and types were problematic and had implementation issues? Were profiles being used correctly? How well did the communities developing the standard mesh with the communities applying the standards? To answer these questions, we will develop an assessment process which  aggregates Bioschemas markup from existing web resources. This will allow us to examine the overall usage of, and compliance to, Bioschemas specifications, as well as allowing us to identify common issues or misuse, and to compare the overall activity of Bioschemas development and adoption by the research community.
 
-## 1.2 Objectives
+Interactions during Biohackathon 2022 Europe led to ongoing work on the development of new and existing types like Sample/BioSamples, however only the process to create and update profiles was developed at that time. The process to create or update ‘types’ is still a manual process requiring sufficient technical expertise. Hence, there is a glaring disconnect between profiles (which can be updated by community members) and the types upon which these profiles are built (which can require technical expertise). To improve the accessibility and value of Bioschemas to existing and emerging communities, we will first work with communities of practice at Biohackathon 2023 Europe to develop new or update existing Bioschemas Types. We will then use these new types as exemplar cases to address issues in the Bioschemas Type development process, in hopes of extending the Bioschemas specification process pipeline developed at Biohackathon 2022 Europe to include Bioschemas types.
 
-In our project, we have a number of threads. Firstly we aim to ease adoption for new users by providing appropriate tooling. Therefore, we will be working on technically connecting the [Data Discovery Engine](https://discovery.biothings.io) to the [Bioschemas](https://bioschemas.org) website. Ultimately this will enable us to more easily generate machine readable types and profiles for existing and NEW communities. This will, for example, enable us to more easily develop new profiles working with plant, biodiversity and machine learning communities on their minimal sets of metadata. 
+Lastly, communities of practice outside of the life sciences have expressed reluctance to use Bioschemas due assumptions based on the name, “Bioschemas.” Many of the Bioschemas profiles and types are relevant to other domains of research, in spite of the name, “Bioschemas.” To encourage adoption of domain-agnostic  ‘Bioschemas’ profiles and types outside of the life science community, and improve standardization between domains of research, we developed a barebones site, https://schemas.science which would display domain-agnostic Bioschemas-developed profiles and types. To ensure that the Schemas.science site remains synchronous with Bioschemas, we would like to extend the automated Bioschemas website updates from the Bioschemas profile development process to schemas.science.
 
-Secondly we have a  “mining” strand of work, where we will examine and collate existing web resources with bioschemas mark up, both to ascertain overall usage and compliance, and identify common issues or misuse.
-
-Furthermore, we will also try and make our work more palatable for other research communities,  by sharing domain-agnostic standards through the schemas.science site. 
-
-We are very happy to welcome web designers, developers, and experts in knowledge engineering, as well as domain experts interested in making progress on FAIRification. 
+**Objectives**
+1. Assess the overall usage and compliance of bioschemas and identify common issues or misuse by collecting and analysing Bioschemas markup from existing web resources
+2. Engage with research communities to create new or update existing Bioschemas Types
+3. Utilising the new Bioschemas Types, develop an automated process to update the Bioschemas website from a DDE-generated JSON-LD representation of the new type
+4. Adapt the processes for automatically generating Bioschemas web page profiles and types to the generation of schemas.science pages.
 
 
 # 2. Results 
@@ -58,6 +73,7 @@ We automated the metadata harvesting through a weekly run GitHub action[^gh].
 Table 1 and Table 2 report the top-20 most used classes and properties. In these table we can also identify some misspelling of Schema.org classes, and properties (e.g. @Type, DataSet)
 
 Table 1. Top-20 most used Schema.org classes in Bioschemas live deploys. 
+
 | Class | Count |
 | -------- | -------- |
 | http://schema.org/CreativeWork	| 14916 |
@@ -82,6 +98,7 @@ Table 1. Top-20 most used Schema.org classes in Bioschemas live deploys.
 | http://schema.org/WebPage	| 28  |
 
 Table 2. Top-20 most used Schema.org properties in Bioschemas live deploys. 
+
 | Property | Count |
 | -------- | -------- |
 | http://www.w3.org/1999/02/22-rdf-syntax-ns#type | 20595 |
@@ -145,12 +162,63 @@ All these figures can be reproduced by re-executing the publicly available Jupyt
 
 [^nb_prop]: https://github.com/BioSchemas/bioschemas-validation/blob/main/scripts/Plots-Validation-Properties.ipynb
 
-### 2.1.3 Discussion
-To conclude this study, the main take-home message is that we need more `dct:conformsTo` properties if we want to increase the number of evaluated live deploy URLs. From the FAIR-Checker perspective, there is ongoing activities aimed at suggesting the closest profile, in the absence of `dct:conformsTo` properties. The profile-based analysis told us that some communities such as *Dataset, DataCatalog, ComputationalWorkflow, ComputationalTool, or TrainingMaterial*, could be supported in priority to increase the quality of their exposed metadata. Finally, the property-based analysis told us that if we focus in priority in better using the `schema:url` property, by reducing the number of validation errors, we could have a high impact on the Bioschemas metadata quality. 
+### 2.1.3 New types and profiles initiated
+_DefinedTerm / DefinedTermSet_
 
-# 3. Discussion and/or Conclusion
+The merits of establishing a Bioschemas profile for standardising DefinedTerm/DefinedTermSet were discussed with members of group #7. Prior to the Biohackathon, asynchronous discussions on the matter had been initiated multiple times, but did not result in the creation of a DefinedTerm profile because it was difficult to convey the compelling use case for a profile. After lengthy at discussions, compelling use cases were developed and an initial draft of the DefinedTerm set was collaboratively created with the members of Group #7. 
 
-We recommend to include some discussion or conclusion about your work. Feel free to modify the section title as it fits better to your manuscript.
+_LabProtocol / LabProcess_
+
+Group #14 expressed interest in revising the Lab Protocol type to have additional properties and creating a new Lab Process type in order to better serve their needs. While it would be possible to update the LabProtocol type based on discussions, it would be difficult to create a new LabProcess type within the time constraints of the Biohackathon due to the established process outlined in the Bioschemas governance documents. To move forward on this issue, members of Group #14 have joined the Lab Protocols Working Group in Bioschemas and drafted an initial LabProcess type which will be processed after the Biohackathon.
+
+
+### 2.1.4 Updating existing types
+_Sample / BioSample_
+
+At the end of Biohackathon 2022, a number of participants expressed interest in improving the Sample and BioSample types and profiles in Bioschemas. After Biohackathon 2022 Europe, these participants worked asynchronously on standardising the properties of these types, but were unable to regain the momentum from Biohackathon 2022. To support their efforts, we initiated discussions with a subject matter expert. Based on that discussion, we calculated the frequency of properties used across Sample records in a number of different ENA checklists. In addition, we created a survey to better understand expected popular properties from these lists, and  marginality of the properties currently in (or expected to be added to) the BioSample type. Participants from various projects at Biohackathon 2023, kindly provided thought-provoking responses for the open-ended questions of the survey.
+
+Table 3 - Top 20 most frequent Sample-related properties in ENA checklists
+
+| Label           | Counts | Grouping | 
+|-----------------|--------| -------- | 
+| collection date | 43 | collection date |
+| geographic location (country and/or sea)| 43|Place|
+| geographic location (region and locality)|33|Place|
+|geographic location (latitude)|31|Place|
+|geographic location (longitude)|31|Place|
+|amount or size of sample collected|28|sample size|
+|broad-scale environmental context|26|Description|
+|local environmental context|26|Description|
+|project name|25|--|
+|nucleic acid extraction|25|sample process|
+|environmental medium|25||
+|sample material processing|23|sample process|
+|adapters|23||
+|nucleic acid amplification|23|sample process|
+|source material identifiers|23|identifiers|
+|multiplex identifiers|22|identifiers|
+|reference for biomaterial|22|identifiers/citation|
+|experimental factor|22||
+|relevant electronic resources|22|reference/citation|
+|relevant standard operating procedures|22|reference/citation|
+
+The full table is available in the GitHub repository for the Biohackathon: https://github.com/elixir-europe/biohackathon-projects-2023/tree/main/23 
+
+![areas of expertise](figures/areas.png)
+Figure 7. Areas of expertise of survey respondents
+
+![samples and specimens](figures/samplesSpecimens.png)
+Figure 8. Relations between samples and specimens
+
+![marginalities](figures/marginalities.png)
+Figure 9. Distribution of expected Marginality for sample-related properties
+
+
+### 3 Discussion
+Based on the results of the assessment of Bioschemas usage, the use of `dct:conformsTo` was limited, hampering our assessment. We need to ensure that this property is utilised if we want to improve our ability to evaluate live deploy URLs. From the FAIR-Checker perspective, there are ongoing activities aimed at suggesting the closest profile, in the absence of `dct:conformsTo` property. The profile-based analysis told us that some communities using properties such as Dataset, DataCatalog, ComputationalWorkflow, ComputationalTool, or TrainingMaterial, could be prioritised for support  to increase the quality of their exposed metadata. Furthermore, a deeper analysis of the FAIR-Checker results of live deploys would enable us to identify consistent misuse or profiles/properties; where there is ‘consistent’ misuse, it is likely to indicate either a badly described profile, inadequately specified properties, or else inappropriate implementation of markup. In all these cases, we can target the ‘Bioschemas group’ responsible for the profile or property, or else the resources that are implementing these profiles, and offer them direct assistance. The property-based analysis revealed `schema:url` to be the property that led to the greatest number of validation errors (Fig. 5). Therefore, improving use of the schema:url property will drastically reduce the number of validation errors, and have a high impact on Bioschemas metadata quality across all live deploys.
+
+With respect to implementing the final piece of our user-centric pipeline, which would enable non-expert users to contribute Bioschemas profiles and types, while we have made significant progress, we have underestimated the time required for this component; to facilitate development of this component, we engaged with users and experts in the biodiversity/sample domains to identify requirements for a ‘BioSample’ type. Over the course of the Biohackathon, we engaged with participants and surveyed others to help identify important properties. Since we were overcommitted with other work, we decided to process the requirements gathering stage further at the German Biohackathon.
+
 
 # 4. Future work
 
@@ -161,7 +229,10 @@ And maybe you want to add a sentence or two on how you plan to continue. Please 
 * Bioschemas validation repo: https://github.com/BioSchemas/bioschemas-validation
 * 
 
+# Contributions
+NJ introduced the project and furnished all required progress reports at BH2023. AG and GT led the writing of the BioHackRxiv report, supported by NJ. AG conducted the assessment of Bioschemas usage. NJ, LJG, AG and GT engaged in Bioschemas discussions with other projects. GT generated the property frequency for Samples in ENA and created and distributed the Survey.
+
 # Acknowledgements
-Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint or similar where this work was (partially) developed.
+Much of this work and key discussions were initiated at the ELIXIR Biohackathon Europe, 2023 held in November. We thank ELIXIR, the research infrastructure for life-science data, for organising and sponsoring this event which gathered individuals from different communities of practice enabling us to make progress on several Bioschemas community efforts. We thank Joana Pauperio, Sebastian Beier, Sveinung Gundersen, Stuart Owen, , Sara EL-Gebali,  Rahuman Sheriff Malik Sheriff, Cyril Pommier,  Daniel Arend, Ivan Mičetić and Steffan Neumann for engaging in and/or organising fruitful discussions. We would also like to thank the following hackathon participants for their thoughtful responses to our survey: Sara Carsanaro, Sebastian Beier, Sam Leeflang, Alice Dennis, Hannah Dörpholz, Marco Brandizi, Justin van der Hooft, Elena Del Pup, Felicia Wolters. Lastly, we would especially like to thank Chloe Llewellyn, Katharina Heil, David Lloyd and other members of the Biohackathon organising committee for their ongoing support throughout the event.
 
 # References
